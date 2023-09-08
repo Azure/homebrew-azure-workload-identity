@@ -30,6 +30,8 @@ class Azwi < Formula
 
   def install
     bin.install "azwi"
+
+    generate_completions_from_executable(bin/"azwi", "completion")
   end
 
   test do
